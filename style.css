@@ -1,8 +1,12 @@
 body {
     background-color: blue;
+    text-align: center;
+     font-family: "Times New Roman", Times, serif;
 }
 h1 {
     background-color: yellow;
+    font-size: 50;
+     font-family: "Times New Roman", Times, serif;
 }
 ol, ul {
     background-color: green;
@@ -12,4 +16,90 @@ button {
 }
 section {
     background-color: white;
+}
+
+.secao-apoio {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff; 
+    border: 2px solid #009c3b; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.secao-apoio h2 {
+    text-align: center;
+    color: #002776; 
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.secao-apoio p {
+    text-align: center;
+    color: #555555;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+
+.form-apoio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%;
+}
+.grupo-campo label {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #002776; 
+    margin-bottom: 5px; 
+}
+
+
+.grupo-campo input,
+.grupo-campo textarea {
+    width: 100%; 
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.grupo-campo input:focus,
+.grupo-campo textarea:focus {
+    border-color: #009c3b; 
+    outline: none;
+}
+.grupo-campo textarea {
+    resize: vertical; 
+    min-height: 100px;
+}
+.btn-enviar {
+    background-color: #FFF112; 
+    color: #002776; 
+    padding: 12px;
+    border: 2px solid #002776;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s; 
+    width: 100%;
+    margin-top: 10px;
+}
+.btn-enviar:hover {
+    background-color: #009c3b; 
+    color: #ffffff; 
+    border-color: #009c3b;
 }
